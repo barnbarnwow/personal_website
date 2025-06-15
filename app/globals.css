@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #022f2e;
     --foreground: #ededed;
   }
 }
@@ -40,6 +40,4 @@ h6 {
   font-family: "Bodoni Moda SC", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5;
 }

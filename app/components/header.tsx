@@ -8,7 +8,9 @@ export default function Header() {
     <header className="text-white p-4">
       {/* Only nav is flex */}
       <nav className="container mx-auto flex items-center justify-between">
-        <h1 className="text-3xl p-5 bg-teal-950 rounded-full">J.</h1>
+        <h1 className="bg-radial-[at_50%_75%] from-teal-950 via-teal-700 to-teal-100 text-3xl p-5 rounded-full">
+          J.
+        </h1>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-4">
@@ -36,7 +38,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden p-1 bg-teal-950 rounded-full"
+          className="md:hidden bg-radial-[at_50%_75%] from-teal-950 via-teal-700 to-teal-100 rounded-full"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -49,24 +51,24 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="md:hidden flex flex-col items-center space-y-2 mt-4">
+        <ul className="md:hidden items-center mt-4">
           <li>
-            <a href="/" className="hover:underline">
+            <a href="/" className="block hover:underline">
               Home
             </a>
           </li>
           <li>
-            <a href="/about" className="hover:underline">
+            <a href="/about" className="block hover:underline">
               About
             </a>
           </li>
           <li>
-            <a href="/projects" className="hover:underline">
+            <a href="/projects" className="block hover:underline">
               Projects
             </a>
           </li>
           <li>
-            <a href="/contact" className="hover:underline">
+            <a href="/contact" className="block hover:underline">
               Contact
             </a>
           </li>
