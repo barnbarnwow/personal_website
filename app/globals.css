@@ -25,12 +25,21 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
+h1 {
+  font-family: "Ballet", cursive;
+  font-style: bold;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Bodoni Moda SC", sans-serif;
   font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }

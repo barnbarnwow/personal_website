@@ -1,15 +1,20 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Share_Tech_Mono } from "next/font/google";
+import { Ballet, Roboto_Flex, Bodoni_Moda_SC } from "next/font/google";
 import "./globals.css";
 
-const space_grotesk = Space_Grotesk({
+const ballet = Ballet({
   subsets: ["latin"],
   weight: ["400"],
 });
 
-const share_tech_mono = Share_Tech_Mono({
+const roboto_flex = Roboto_Flex({
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["400", "700"],
+});
+
+const bodoni_moda_sc = Bodoni_Moda_SC({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${share_tech_mono.className} antialiased`}>
-        {children}
-      </body>
+      <body className={`${roboto_flex.className} antialiased`}>{children}</body>
     </html>
   );
 }
