@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,24 +16,24 @@ export default function Header() {
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-4">
           <li>
-            <a href="/" className="hover:underline">
+            <Link href="/" className="hover:underline">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="hover:underline">
+            <Link href="/about" className="hover:underline">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/projects" className="hover:underline">
+            <Link href="/projects" className="hover:underline">
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" className="hover:underline">
+            <Link href="/contact" className="hover:underline">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -53,24 +54,24 @@ export default function Header() {
       {isOpen && (
         <ul className="md:hidden items-center mt-4">
           <li>
-            <a href="/" className="block hover:underline">
+            <Link href="/" className="block hover:underline">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="block hover:underline">
+            <Link href="/about" className="block hover:underline">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/projects" className="block hover:underline">
+            <Link href="/projects" className="block hover:underline">
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/contact" className="block hover:underline">
+            <Link href="/contact" className="block hover:underline">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       )}

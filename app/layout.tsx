@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Ballet, Roboto_Flex, Bodoni_Moda_SC } from "next/font/google";
+import { Roboto_Flex, Bodoni_Moda_SC, Ballet } from "next/font/google";
 import "./globals.css";
-
-const ballet = Ballet({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const roboto_flex = Roboto_Flex({
   subsets: ["latin"],
@@ -14,7 +9,12 @@ const roboto_flex = Roboto_Flex({
 
 const bodoni_moda_sc = Bodoni_Moda_SC({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "400",
+});
+
+const ballet = Ballet({
+  subsets: ["latin"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
