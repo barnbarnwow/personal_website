@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Roboto_Flex, Bodoni_Moda_SC, Ballet } from "next/font/google";
+import { Roboto_Flex } from "next/font/google";
 import "./globals.css";
 
 const roboto_flex = Roboto_Flex({
   subsets: ["latin"],
   weight: ["400", "700"],
-});
-
-const bodoni_moda_sc = Bodoni_Moda_SC({
-  subsets: ["latin"],
-  weight: "400",
-});
-
-const ballet = Ballet({
-  subsets: ["latin"],
-  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -30,11 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${bodoni_moda_sc.className} ${ballet.className} ${roboto_flex.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${roboto_flex.className} antialiased`}>{children}</body>
     </html>
   );
 }
