@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto_flex.className} ${bodoni_moda_sc.className} ${ballet.className} antialiased`}
+        className={`${bodoni_moda_sc.className} ${ballet.className} ${roboto_flex.className} antialiased`}
       >
         {children}
       </body>
