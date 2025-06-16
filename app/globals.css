@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-  font-family: "Ballet", cursive;
+  font-family: "Ballet", cursive !important;
   font-style: normal;
   font-weight: 400;
 }
@@ -34,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Bodoni Moda SC", serif;
+  font-family: "Bodoni Moda SC", serif !important;
   font-style: normal;
   font-weight: 400;
 }
