@@ -9,9 +9,9 @@ export default function Header() {
     <header className="text-white p-4">
       {/* Only nav is flex */}
       <nav className="container mx-auto flex items-center justify-between">
-        <h1 className="bg-radial-[at_50%_75%] from-teal-950 via-teal-700 to-teal-100 text-3xl p-5 rounded-full">
-          J.
-        </h1>
+        <div className="bg-radial from-teal-700 from-10% to-teal-100 md:bg-linear-to-t box-content size-8 p-4 m-2 rounded-full flex md:w-100 items-center justify-center">
+          <h1 className="text-3xl text-center">J.</h1>
+        </div>
 
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-4">
@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden bg-radial-[at_50%_75%] from-teal-950 via-teal-700 to-teal-100 rounded-full"
+          className="md:hidden p-2 shadow-sm/20 hover:shadow-none hover:inset-shadow-sm/50 rounded-full"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -52,7 +52,7 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="md:hidden items-center mt-4">
+        <ul className="md:hidden text-right text-2xl mt-4 animate-slideDownFade">
           <li>
             <Link href="/" className="block hover:underline">
               Home
