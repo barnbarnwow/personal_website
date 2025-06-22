@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden p-2 shadow-sm/20 hover:shadow-none hover:inset-shadow-sm/50 rounded-full"
+          className="md:hidden p-2 shadow-sm/20 rounded-full"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -52,24 +52,24 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="md:hidden text-right text-2xl mt-4 animate-slideDownFade">
+        <ul className="block p-2 w-1/2 ml-auto rounded bg-teal-500 md:hidden text-right animate-slideDownFade">
           <li>
-            <Link href="/" className="block hover:underline">
+            <Link href="/" className="m-2 hover:underline">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about" className="block hover:underline">
+            <Link href="/about" className="m-2 hover:underline">
               About
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="block hover:underline">
+            <Link href="/projects" className="m-2 hover:underline">
               Projects
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="block hover:underline">
+            <Link href="/contact" className="m-2 hover:underline">
               Contact
             </Link>
           </li>

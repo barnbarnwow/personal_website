@@ -5,38 +5,28 @@ export default function Home() {
     <>
       <Header />
       <main className="mx-4 md:px-10">
-        <h2 className="text-4xl md:mb-2 text-center">
-          Welcome to My Portfolio
-        </h2>
-        <img
-          className="md:float-start object-cover w-96 aspect-square rounded-lg my-2 md:m-4"
-          src={"/crowd.avif"}
-        ></img>
-        <p className="indent-8 md:itemcenter md:text-lg md:px-20 md:mt-4">
-          A well-crafted website is no longer optional; it is the first and most
-          lasting impression your business leaves in the digital world. For
-          discerning customers, design communicates credibility before a single
-          word is read. A visually polished, intuitively structured site signals
-          that you value their time and understand their expectations. In
-          today’s crowded market, trust is built in seconds — and a beautiful,
-          well-composed website is one of the most powerful tools to earn it.
-        </p>
-        <p className="indent-8 md:itemcenter md:text-lg md:px-20">
-          Equally important is restraint. True sophistication lies in clarity,
-          not complexity. A site that loads swiftly, feels purposeful, and
-          guides visitors seamlessly reflects a brand that respects efficiency
-          and commands confidence. Visitors should never feel lost or
-          overwhelmed; instead, every interaction should feel deliberate and
-          effortless. In an age where attention is fleeting, an elegant,
-          streamlined digital presence is more than good design — it is a
-          statement of quality and a quiet promise that your business operates
-          with the same precision it displays.
-        </p>
-        <p className="indent-8 md:itemcenter md:text-lg md:px-20">
-          Let’s create a website for you that looks exceptional, feels
-          effortless to use, and quietly earns your customers’ trust from the
-          very first click.
-        </p>
+        <div
+          style={{
+            backgroundImage: "url('/crowd.avif')",
+            backgroundSize: "cover",
+          }}
+          className="bg-teal-700 bg-blend-multiply bg-cover bg-center bg-no-repeat w-full md:w-2/5 h-64 md:h-96 flex items-center justify-center rounded-lg my-4 md:my-8 shadow-sm/40"
+        >
+          <h2 className="text-4xl md:mb-2 text-center text-shadow-xs">
+            Welcome to My Portfolio
+          </h2>
+        </div>
+        <div className="m-8">
+          <p className="text-center text-lg md:text-2xl">
+            Thank you for visiting my portfolio. This webiste is intended to
+            serve two purposes: one as a personal portfolio of webistes that
+            I've developed over my short career as a web developer. And as a
+            medium for self expression. I hope that you will forgive me if the
+            appearance of the site or its contents are too 'artsy' or
+            pretentious. The point of this site is precisely that, but without
+            coming off as too much... of that.
+          </p>
+        </div>
       </main>
     </>
   );
