@@ -52,5 +52,5 @@ h6 {
 }
 
 .animate-slideDownFade {
-  animation: slideDownFade 0.2s ease-out forwards;
+  animation: slideDownFade 0.15s ease-out forwards;
 }
