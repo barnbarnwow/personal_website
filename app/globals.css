@@ -43,14 +43,14 @@ h6 {
 
 @keyframes slideDownFade {
   0% {
-    opacity: 70%;
-    transform: translateY(-1px);
+    opacity: 0;
+    transform: translateX(200px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
 .animate-slideDownFade {
-  animation: slideDownFade 0.15s ease-in-out forwards;
+  animation: slideDownFade 0.2s ease-out forwards;
 }

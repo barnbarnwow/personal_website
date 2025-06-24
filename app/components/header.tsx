@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="text-white p-4">
+    <header className="p-4">
       {/* Only nav is flex */}
       <nav className="container mx-auto flex items-center justify-between">
         <div className="bg-radial from-teal-700 from-10% to-teal-100 md:bg-linear-to-t box-content size-8 p-4 m-2 rounded-full flex md:w-100 items-center justify-center">
@@ -39,7 +39,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden p-2 shadow-sm/20 rounded-full"
+          className="md:hidden absolute right-5 p-4 shadow-xs/50 rounded-full"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -52,24 +52,36 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="block p-2 w-1/2 ml-auto rounded bg-teal-500 md:hidden text-right animate-slideDownFade">
+        <ul className="absolute z-50 shadow-xs/50 p-1 w-1/2 right-0 top-29 rounded-l bg-teal-900/50 backdrop-blur-sm md:hidden text-center animate-slideDownFade">
           <li>
-            <Link href="/" className="m-2 hover:underline">
+            <Link
+              href="/"
+              className="block bg-teal-950 rounded p-2 m-1 hover:underline"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about" className="m-2 hover:underline">
+            <Link
+              href="/about"
+              className="block bg-teal-950 rounded p-2 m-1 hover:underline"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="m-2 hover:underline">
+            <Link
+              href="/projects"
+              className="block bg-teal-950 rounded p-2 m-1 hover:underline"
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="m-2 hover:underline">
+            <Link
+              href="/contact"
+              className="block bg-teal-950 rounded p-2 m-1 hover:underline"
+            >
               Contact
             </Link>
           </li>
