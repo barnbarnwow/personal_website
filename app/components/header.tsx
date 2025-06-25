@@ -43,7 +43,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden absolute right-2 p-4 rounded-sm bg-teal-100/10"
+          className="md:hidden absolute right-2 p-4 inset-shadow-sm/50 rounded-sm bg-teal-100/10"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
