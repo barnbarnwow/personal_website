@@ -5,8 +5,12 @@ import Link from "next/link";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = () => {
+    setIsOpen(false); // Close the menu when a link is clicked
+  };
+
   return (
-    <header className="p-4">
+    <header className="bg-teal-950 sticky top-0 z-50 shadow-xs/50 backdrop-blur-sm">
       {/* Only nav is flex */}
       <nav className="container mx-auto flex items-center justify-between">
         <div className="bg-radial from-teal-700 from-10% to-teal-100 md:bg-linear-to-t box-content size-8 p-4 m-2 rounded-full flex md:w-100 items-center justify-center">
@@ -39,7 +43,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden absolute right-5 p-4 shadow-xs/50 rounded-full"
+          className="md:hidden absolute right-2 p-4 rounded-sm bg-teal-100/10"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -52,10 +56,11 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="absolute z-50 shadow-xs/50 p-1 w-1/2 right-0 top-29 rounded-l bg-teal-900/50 backdrop-blur-sm md:hidden text-center animate-slideDownFade">
+        <ul className="absolute shadow-xs/50 p-1 w-1/2 right-0 top-20 rounded-l bg-teal-900/50 backdrop-blur-sm md:hidden text-center animate-slideDownFade">
           <li>
             <Link
               href="/"
+              onClick={handleLinkClick}
               className="block bg-teal-950 rounded p-2 m-1 hover:underline"
             >
               Home
@@ -64,6 +69,7 @@ export default function Header() {
           <li>
             <Link
               href="/about"
+              onClick={handleLinkClick}
               className="block bg-teal-950 rounded p-2 m-1 hover:underline"
             >
               About
@@ -72,6 +78,7 @@ export default function Header() {
           <li>
             <Link
               href="/projects"
+              onClick={handleLinkClick}
               className="block bg-teal-950 rounded p-2 m-1 hover:underline"
             >
               Projects
@@ -80,6 +87,7 @@ export default function Header() {
           <li>
             <Link
               href="/contact"
+              onClick={handleLinkClick}
               className="block bg-teal-950 rounded p-2 m-1 hover:underline"
             >
               Contact
