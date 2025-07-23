@@ -1,10 +1,11 @@
+import Footer from "./components/footer";
 import Header from "./components/header";
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="mx-4 md:px-10">
+      <main className="mx-4 md:px-10 h-screen">
         <h2 className="text-4xl md:mb-2 text-center">
           Welcome to My Portfolio
         </h2>
@@ -38,6 +39,7 @@ export default function Home() {
           very first click.
         </p>
       </main>
+      <Footer />
     </>
   );
 }

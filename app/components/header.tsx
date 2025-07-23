@@ -20,22 +20,34 @@ export default function Header() {
         {/* Desktop nav */}
         <ul className="hidden md:flex space-x-4">
           <li>
-            <Link href="/" className="hover:underline">
+            <Link
+              href="/"
+              className="relative inline-block duration-100 after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-red-500 after:transition-all after:duration-100 hover:after:w-full"
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:underline">
+            <Link
+              href="/about"
+              className="relative inline-block duration-100 after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-red-500 after:transition-all after:duration-100 hover:after:w-full"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link href="/projects" className="hover:underline">
+            <Link
+              href="/projects"
+              className="relative inline-block duration-100 after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-red-500 after:transition-all after:duration-100 hover:after:w-full"
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:underline">
+            <Link
+              href="/contact"
+              className="relative inline-block duration-100 after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-red-500 after:transition-all after:duration-100 hover:after:w-full"
+            >
               Contact
             </Link>
           </li>
