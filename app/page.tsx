@@ -10,7 +10,7 @@ export default function Home() {
         </h2>
         <img
           className="md:float-start object-cover w-96 aspect-square rounded-lg my-2 md:m-4"
-          src={"/crowd.avif"}
+          src={"/tower.jpg"}
         ></img>
         <p className="indent-8 md:itemcenter md:text-lg md:px-20 md:mt-4">
           A well-crafted website is no longer optional; it is the first and most

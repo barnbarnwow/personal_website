@@ -13,7 +13,7 @@ export default function Header() {
           <img
             src="/logo.png"
             alt=""
-            className="w-20 h-20 object-contain rounded"
+            className="w-15 h-15 md:w-20 md:h-20 object-contain rounded-full"
           />
         </div>
 
