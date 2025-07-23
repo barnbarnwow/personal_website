@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="text-white p-4">
+    <header className="p-4">
       {/* Logo */}
       <nav className="container mx-auto flex items-center justify-between">
         <div>
