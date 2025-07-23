@@ -42,7 +42,10 @@ export default function Header() {
         </ul>
 
         {/* Mobile toggle button */}
-        <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="md:hidden p-2 bg-red-500"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? (
             <img src="/close_icon.svg" alt="Close" width={28} height={28} />
           ) : (

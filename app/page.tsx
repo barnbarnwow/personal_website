@@ -9,7 +9,7 @@ export default function Home() {
           Welcome to My Portfolio
         </h2>
         <img
-          className="md:float-start object-cover w-96 aspect-square rounded-lg my-2 md:m-4"
+          className="md:float-start object-cover w-96 aspect-square my-2 md:m-4"
           src={"/tower.jpg"}
         ></img>
         <p className="indent-8 md:itemcenter md:text-lg md:px-20 md:mt-4">
