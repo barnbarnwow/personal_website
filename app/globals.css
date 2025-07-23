@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ededed;
+  --foreground: #000000;
 }
 
 @theme inline {
@@ -12,7 +12,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #022f2e;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
@@ -20,25 +20,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-}
-
-h1 {
-  font-family: "Ballet", cursive !important;
-  font-style: normal;
-  font-weight: 400;
-  transform: translate(-3px, 4px);
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Bodoni Moda SC", serif !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.2;
 }
 
 @keyframes slideDownFade {
@@ -51,5 +32,5 @@ h6 {
 }
 
 .animate-slideDownFade {
-  animation: slideDownFade 0.35s ease-in-out forwards;
+  animation: slideDownFade 0.35s ease-out forwards;
 }

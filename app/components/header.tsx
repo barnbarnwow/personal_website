@@ -7,10 +7,14 @@ export default function Header() {
 
   return (
     <header className="text-white p-4">
-      {/* Only nav is flex */}
+      {/* Logo */}
       <nav className="container mx-auto flex items-center justify-between">
-        <div className="bg-radial from-teal-700 from-10% to-teal-100 md:bg-linear-to-t box-content size-8 p-4 m-2 rounded-full flex md:w-100 items-center justify-center">
-          <h1 className="text-3xl text-center">J.</h1>
+        <div>
+          <img
+            src="/logo.png"
+            alt=""
+            className="w-20 h-20 object-contain rounded"
+          />
         </div>
 
         {/* Desktop nav */}
@@ -38,10 +42,7 @@ export default function Header() {
         </ul>
 
         {/* Mobile toggle button */}
-        <button
-          className="md:hidden p-2 shadow-sm/20 hover:shadow-none hover:inset-shadow-sm/50 rounded-full"
-          onClick={() => setIsOpen(!isOpen)}
-        >
+        <button className="md:hidden p-2" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
             <img src="/close_icon.svg" alt="Close" width={28} height={28} />
           ) : (
@@ -52,7 +53,7 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="md:hidden text-right text-2xl mt-4 animate-slideDownFade">
+        <ul className="md:hidden text-xl mt-4 animate-slideDownFade">
           <li>
             <Link href="/" className="block hover:underline">
               Home
