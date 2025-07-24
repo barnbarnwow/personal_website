@@ -1,5 +1,6 @@
 import Footer from "./components/footer";
 import Header from "./components/header";
+import Carousel from "./components/carousel";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
       <main className="min-h-screen">
         <div className="md:flex justify-center">
+          {/* Hero Image */}
           <div className="inline-block md:w-2/5">
             <img
               className="object-cover aspect-square"
