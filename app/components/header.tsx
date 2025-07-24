@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full">
+    <header className="md:shadow-xl mb-2 md:mb-10 md:border-b">
       {/* Navbar */}
       <nav className="w-full flex items-center justify-between md:justify-center">
         <div>
@@ -14,7 +14,7 @@ export default function Header() {
           <img
             src="/logo.png"
             alt=""
-            className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-2 md:m-6"
+            className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-3 "
           />
         </div>
 
