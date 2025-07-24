@@ -5,15 +5,16 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="mx-4 md:px-10 h-screen">
-        <h2 className="text-4xl md:mb-2 text-center">
-          Welcome to My Portfolio
-        </h2>
+      <main className="m-4 md:px-10 min-h-screen">
+        <h1 className="text-2xl text-center md:text-3xl font-bold md:my-3">
+          Welcome to this space
+        </h1>
+        <span className="bg-red-500"></span>
         <img
           className="md:float-start object-cover w-96 aspect-square my-2 md:m-4"
           src={"/tower.jpg"}
         ></img>
-        <p className="indent-8 md:itemcenter md:text-lg md:px-20 md:mt-4">
+        <p className="indent-8 md:text-lg md:px-20 md:mt-4">
           A well-crafted website is no longer optional; it is the first and most
           lasting impression your business leaves in the digital world. For
           discerning customers, design communicates credibility before a single
@@ -22,7 +23,7 @@ export default function Home() {
           today’s crowded market, trust is built in seconds — and a beautiful,
           well-composed website is one of the most powerful tools to earn it.
         </p>
-        <p className="indent-8 md:itemcenter md:text-lg md:px-20">
+        <p className="indent-8 md:text-lg md:px-20">
           Equally important is restraint. True sophistication lies in clarity,
           not complexity. A site that loads swiftly, feels purposeful, and
           guides visitors seamlessly reflects a brand that respects efficiency
@@ -33,7 +34,7 @@ export default function Home() {
           statement of quality and a quiet promise that your business operates
           with the same precision it displays.
         </p>
-        <p className="indent-8 md:itemcenter md:text-lg md:px-20">
+        <p className="indent-8 md:text-lg md:px-20">
           Let’s create a website for you that looks exceptional, feels
           effortless to use, and quietly earns your customers’ trust from the
           very first click.

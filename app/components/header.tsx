@@ -6,14 +6,15 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="p-4">
-      {/* Logo */}
-      <nav className="container mx-auto flex items-center justify-between">
+    <header className="w-full">
+      {/* Navbar */}
+      <nav className="w-full flex items-center justify-between md:justify-center">
         <div>
+          {/* Logo */}
           <img
             src="/logo.png"
             alt=""
-            className="w-15 h-15 md:w-20 md:h-20 object-contain rounded-full"
+            className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-2 md:m-6"
           />
         </div>
 
@@ -55,7 +56,7 @@ export default function Header() {
 
         {/* Mobile toggle button */}
         <button
-          className="md:hidden p-2 bg-red-500"
+          className="md:hidden mx-2 p-2 bg-red-500"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -68,7 +69,7 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="md:hidden text-xl mt-4 animate-slideDownFade">
+        <ul className="md:hidden bg-gray-600 text-xl p-6 m-4 animate-slideDownFade">
           <li>
             <Link href="/" className="block hover:underline">
               Home
