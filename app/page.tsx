@@ -1,6 +1,5 @@
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Carousel from "./components/carousel";
 
 export default function Home() {
   return (
@@ -21,11 +20,11 @@ export default function Home() {
               Welcome to this space
             </h1>
             <p className="indent-8 md:text-lg md:px-20 mt-1 md:mt-1">
-              I'm a web developer from Goodman, MO, focused on creating clear
-              and user-friendly websites. I specialize in building online
-              platforms that effectively showcase a business's unique offerings,
-              transforming concepts into engaging digital experiences with
-              excellent design and reliable features.
+              I&apos;m a web developer from Goodman, MO, focused on creating
+              clear and user-friendly websites. I specialize in building online
+              platforms that effectively showcase a business&apos;s unique
+              offerings, transforming concepts into engaging digital experiences
+              with excellent design and reliable features.
             </p>
             <p className="indent-8 md:text-lg md:px-20 md:mt-1">
               My design ethos is predicated on a commitment to designing
