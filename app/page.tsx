@@ -34,11 +34,10 @@ export default function Home() {
               communicate sophistication and a sincere respect for aesthetic
               merit.
             </p>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
             <p className="indent-8 md:text-lg md:px-20 md:mt-1">
-              Let’s create a website for you that looks exceptional, feels
-              effortless to use, and quietly earns your customers’ trust from
-              the very first click.
+              Let&apos;s create a website for you that looks exceptional, feels
+              effortless to use, and quietly earns your customers&apos; trust
+              from the very first click.
             </p>
           </div>
         </div>
