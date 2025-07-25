@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="md:shadow-xl mb-2 md:mb-10 md:border-b">
+    <header className="md:shadow-sm">
       {/* Navbar */}
       <nav className="w-full flex items-center justify-between md:justify-center">
         <div>
@@ -14,7 +14,7 @@ export default function Header() {
           <img
             src="/logo.png"
             alt=""
-            className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-3 "
+            className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-3 md:mr-20"
           />
         </div>
 
@@ -69,7 +69,7 @@ export default function Header() {
 
       {/* Mobile nav, appears below nav row */}
       {isOpen && (
-        <ul className="md:hidden bg-gray-600 text-xl p-6 m-4 animate-slideDownFade">
+        <ul className="md:hidden bg-red-500 text-xl p-6 m-4 animate-slideDownFade">
           <li>
             <Link href="/" className="block hover:underline">
               Home

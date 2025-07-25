@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
 
-const space_grotesk = Space_Grotesk({
+const space_grotesk = Space_Mono({
   subsets: ["latin"],
   weight: ["400", "700"],
 });
@@ -20,12 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body className={`${space_grotesk.className} antialiased`}>
         {children}
       </body>
