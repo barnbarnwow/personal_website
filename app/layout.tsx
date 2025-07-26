@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Space_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 const space_grotesk = Space_Mono({
   subsets: ["latin"],
@@ -21,7 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${space_grotesk.className} antialiased`}>
-        {children}
+        <div className="flex flex-col">
+          {/* Header component can be added here if needed */}
+          <Header />
+          {children}
+          {/* Footer component can be added here if needed */}
+          <Footer />
+        </div>
       </body>
     </html>
   );

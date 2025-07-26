@@ -38,10 +38,10 @@ export default function Header() {
           </li>
           <li>
             <Link
-              href="/test"
+              href="/projects"
               className="relative inline-block duration-100 after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-red-500 after:transition-all after:duration-100 hover:after:w-full"
             >
-              Test
+              Projects
             </Link>
           </li>
           <li>
