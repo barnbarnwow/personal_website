@@ -22,13 +22,13 @@ export default function About() {
             clients.
           </p>
           <p className="indent-8 md:text-lg md:px-20 md:mt-1">
-            With years of experience in the industry, I pride myself on my
+            Although I am fairly new to the industry, I pride myself on my
             ability to transform ideas into reality, ensuring that every project
             I undertake is executed with precision and care.
           </p>
           <p className="indent-8 md:text-lg md:px-20 md:mt-1">
-            Join me on this journey as I continue to innovate and push the
-            boundaries of web development.
+            I hope you can join me on this journey as I continue to learn about
+            the boundaries of web development.
           </p>
         </div>
       </div>

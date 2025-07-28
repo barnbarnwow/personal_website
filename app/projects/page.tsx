@@ -17,8 +17,8 @@ export default function Projects() {
           </h1>
           <p className="indent-8 md:text-lg md:px-20 mt-1 md:mt-1">
             I take pride in my work and am excited to share some of my recent
-            projects with you. Each project is a testament to my commitment to
-            quality and innovation.
+            projects with you. I hope that you can see how each project is a
+            reflection of my commitment to quality and innovation.
           </p>
           <p className="indent-8 md:text-lg md:px-20 md:mt-1">
             From small business websites to large-scale applications, I have the

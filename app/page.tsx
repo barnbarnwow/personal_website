@@ -37,11 +37,11 @@ export default function Home() {
       </div>
       <div className="justify-center mt-5">
         <h2 className="text-center w-full font-bold mb-4">
-          This is Two Cols of Text
+          These are two Cols of Text
         </h2>
         <div className="md:flex justify-center">
           <div className="bg-red-500 m-1 p-4 md:flex-col">
-            <h3 className="text-center font-bold">Subheader of Header 2</h3>
+            <h3 className="text-center font-bold">Subheader of Header 1</h3>
             <p>This is the filler text for the first subheader</p>
           </div>
           <div className="bg-red-500 m-1 p-4 md:flex-col">
