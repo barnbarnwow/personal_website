@@ -11,15 +11,17 @@ export default function Header() {
       <nav className="w-full flex items-center justify-between md:justify-center">
         <div>
           {/* Logo */}
-          <img
-            src="/logo.png"
-            alt=""
-            className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-3 md:mr-20"
-          />
+          <Link href="/">
+            <img
+              src="/logo.png"
+              alt=""
+              className="w-15 h-15 md:w-15 md:h-15 object-contain rounded-full m-3 md:mr-20"
+            />
+          </Link>
         </div>
 
         {/* Desktop nav */}
-        <ul className="hidden md:flex space-x-4">
+        <ul className="hidden md:flex text-xl space-x-4">
           <li>
             <Link
               href="/"
