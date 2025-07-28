@@ -11,7 +11,7 @@ export default function Home() {
           ></img>
         </div>
         {/* Hero Text */}
-        <div className="md:m-0 md:w-1/2 flex flex-col items-center justify-center">
+        <div className="mx-8 md:m-0 md:w-1/2 flex flex-col items-center justify-center">
           <h1 className="text-2xl text-center md:text-3xl font-bold">
             Welcome to this space
           </h1>
@@ -35,16 +35,17 @@ export default function Home() {
           </p>
         </div>
       </div>
+      {/* Two Columns of Text */}
       <div className="justify-center mt-5">
         <h2 className="text-center w-full font-bold mb-4">
           These are two Cols of Text
         </h2>
         <div className="md:flex justify-center">
-          <div className="bg-red-500 m-1 p-4 md:flex-col">
+          <div className="bg-red-500 my-1 md:mx-2 p-4 md:flex-col">
             <h3 className="text-center font-bold">Subheader of Header 1</h3>
             <p>This is the filler text for the first subheader</p>
           </div>
-          <div className="bg-red-500 m-1 p-4 md:flex-col">
+          <div className="bg-red-500 my-1 md:mx-2 p-4 md:flex-col">
             <h3 className="text-center font-bold">Subheader of Header 2</h3>
             <p>This is the filler text for the second subheader</p>
           </div>

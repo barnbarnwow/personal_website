@@ -11,7 +11,7 @@ export default function About() {
           ></img>
         </div>
         {/* About Text */}
-        <div className="md:m-0 md:w-1/2 flex flex-col items-center justify-center">
+        <div className="mx-8 md:m-0 md:w-1/2 flex flex-col items-center justify-center">
           <h1 className="text-2xl text-center md:text-3xl font-bold">
             About Me
           </h1>
