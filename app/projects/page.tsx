@@ -6,8 +6,8 @@ export default function Projects() {
         <div className="block my-2 md:w-2/5">
           <img
             className="object-cover aspect-square"
-            src={"/carousel/carousel3.jpg"}
-            alt="Projects"
+            src={"/carousel/stairs.jpg"}
+            alt="Photo by H&CO on Unsplash"
           ></img>
         </div>
         {/* Projects Text */}

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Anonymous_Pro } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
-const space_grotesk = Space_Mono({
+const anonymous_pro = Anonymous_Pro({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: "400",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${space_grotesk.className} antialiased`}>
+      <body className={`${anonymous_pro.className} antialiased`}>
         <div className="flex flex-col">
           {/* Header component can be added here if needed */}
           <Header />

@@ -6,8 +6,8 @@ export default function Projects() {
         <div className="block my-2 md:w-2/5">
           <img
             className="object-cover aspect-square"
-            src={"/carousel/carousel3.jpg"}
-            alt="Projects"
+            src={"/carousel/bust.jpg"}
+            alt="Photo by Jon Tyson on Unsplash"
           ></img>
         </div>
         {/* Contact Text */}
@@ -31,36 +31,36 @@ export default function Projects() {
                 href="https://github.com/barnbarnwow"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-3xl hover:text-gray-600 transition-colors"
+                className="text-3xl"
               >
                 <img
                   src="github-brands-solid-full.svg"
                   alt="Github Link"
-                  className="w-8 h-8" // Using Tailwind classes for 32px width and height
+                  className="w-10 h-10 bg-red-500 rounded-sm"
                 />
               </a>
               <a
                 href="https://www.linkedin.com/in/baranpas-jesse/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-3xl hover:text-gray-600 transition-colors"
+                className="text-3xl"
               >
                 <img
                   src="square-linkedin-brands-solid-full.svg"
                   alt="Github Link"
-                  className="w-8 h-8" // Using Tailwind classes for 32px width and height
+                  className="w-10 h-10 bg-red-500 rounded-sm"
                 />
               </a>
               <a
                 href="sendto: barneyjesse@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-3xl hover:text-gray-600 transition-colors"
+                className="text-3xl"
               >
                 <img
                   src="at-solid-full.svg"
                   alt="Github Link"
-                  className="w-8 h-8" // Using Tailwind classes for 32px width and height
+                  className="w-10 h-10 bg-red-500 rounded-sm"
                 />
               </a>
             </div>

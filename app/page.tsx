@@ -4,7 +4,11 @@ export default function Home() {
       <div className="md:flex justify-center md:border-y">
         {/* Hero Image */}
         <div className="block my-2 md:w-2/5">
-          <img className="object-cover aspect-square" src={"/tower.jpg"}></img>
+          <img
+            className="object-cover aspect-square"
+            src={"carousel/chairs.jpg"}
+            alt="Photo by Joost Crop on Unsplash"
+          ></img>
         </div>
         {/* Hero Text */}
         <div className="md:m-0 md:w-1/2 flex flex-col items-center justify-center">

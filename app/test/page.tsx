@@ -1,12 +1,7 @@
 import Carousel from "../components/carousel";
 
 export default function Test() {
-  const images = [
-    "/carousel/carousel1.jpg",
-    "/carousel/carousel2.jpg",
-    "/carousel/carousel3.jpg",
-    "/carousel/carousel4.jpg",
-  ];
+  const images = ["/carousel/front.jpg"];
   return (
     <div className="flex flex-col justify-center items-center max-w-screen min-h-screen">
       {/* Test Page */}

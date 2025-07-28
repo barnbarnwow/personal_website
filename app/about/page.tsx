@@ -6,8 +6,8 @@ export default function About() {
         <div className="block my-2 md:w-2/5">
           <img
             className="object-cover aspect-square"
-            src={"/carousel/carousel4.jpg"}
-            alt="About Us"
+            src={"/carousel/ribbons.jpg"}
+            alt="Photo by Jamie Street on Unsplash"
           ></img>
         </div>
         {/* About Text */}
