@@ -16,11 +16,11 @@ export default function Home() {
             Welcome to this space
           </h1>
           <p className="indent-8 md:text-lg md:px-20 mt-1 md:mt-1">
-            I&apos;m a web developer from Goodman, MO, focused on creating clear
-            and user-friendly websites. I specialize in building online
-            platforms that effectively showcase a business&apos;s unique
-            offerings, transforming concepts into engaging digital experiences
-            with excellent design and reliable features.
+            I am a web developer from Goodman, MO, focused on creating clear and
+            user-friendly websites. I specialize in building online platforms
+            that effectively showcase a business&apos;s unique offerings,
+            transforming concepts into engaging digital experiences with
+            excellent design and reliable features.
           </p>
           <p className="indent-8 md:text-lg md:px-20 md:mt-1">
             My design ethos is predicated on a commitment to designing websites
@@ -30,8 +30,8 @@ export default function Home() {
           </p>
           <p className="indent-8 md:text-lg md:px-20 md:mt-1">
             Let&apos;s create a website for you that looks exceptional, feels
-            effortless to use, and quietly earns your customers&apos; trust from
-            the very first click.
+            effortless to use, and quietly earns the trust of your customers;
+            trust from the very first click.
           </p>
         </div>
       </div>
