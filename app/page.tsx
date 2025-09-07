@@ -37,17 +37,31 @@ export default function Home() {
       </div>
       {/* Two Columns of Text */}
       <div className="justify-center mt-5">
-        <h2 className="text-center w-full font-bold mb-4">
-          These are two Cols of Text
-        </h2>
+        <h2 className="text-center w-full bg-gray-700 border-y-1">Overview</h2>
         <div className="md:flex justify-center">
-          <div className="bg-red-500 my-1 md:mx-2 p-4 md:flex-col">
-            <h3 className="text-center font-bold">Subheader of Header 1</h3>
-            <p>This is the filler text for the first subheader</p>
+          <div className="bg-red-500 my-1 md:mx-2 p-4">
+            <h3 className="text-center font-bold">Key Skills</h3>
+            <div className="flex justify-around">
+              <ul className="text-center">
+                <li className="border-1 my-1 p-1">React</li>
+                <li className="border-1 my-1 p-1">Next.js</li>
+                <li className="border-1 my-1 p-1">Digital Marketing</li>
+              </ul>
+            </div>
           </div>
-          <div className="bg-red-500 my-1 md:mx-2 p-4 md:flex-col">
-            <h3 className="text-center font-bold">Subheader of Header 2</h3>
-            <p>This is the filler text for the second subheader</p>
+          <div className="bg-red-500 my-1 md:mx-2 p-4">
+            <h3 className="text-center font-bold">Professional History</h3>
+            <ul className="text-center">
+              <li className="border-1 my-1 p-1">
+                Missouri Southern State University; BSBA of Marketing
+              </li>
+              <li className="border-1 my-1 p-1">
+                Crowder College; AAS of Business Administration
+              </li>
+              <li className="border-1 my-1 p-1">
+                Cornell University; Financial Management Certificate
+              </li>
+            </ul>{" "}
           </div>
         </div>
       </div>
