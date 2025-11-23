@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <div className="md:flex justify-center md:border-y">
+      <div className="md:flex justify-center">
         {/* Hero Image */}
         <div className="block my-2 md:w-2/5">
           <img
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       {/* Two Columns of Text */}
       <div className="justify-center mt-5">
-        <h2 className="text-center w-full bg-gray-700 border-y-1">Overview</h2>
+        <h2 className="text-center w-full bg-gray-700">Overview</h2>
         <div className="md:flex justify-center">
           <div className="bg-red-500 my-1 md:mx-2 p-4">
             <h3 className="text-center font-bold">Key Skills</h3>
@@ -61,7 +61,7 @@ export default function Home() {
               <li className="border-1 my-1 p-1">
                 Cornell University; Financial Management Certificate
               </li>
-            </ul>{" "}
+            </ul>
           </div>
         </div>
       </div>

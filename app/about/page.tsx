@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <main className="min-h-screen">
-      <div className="md:flex justify-center md:border-y">
+      <div className="md:flex justify-center">
         {/* About Image */}
         <div className="block my-2 md:w-2/5">
           <img
