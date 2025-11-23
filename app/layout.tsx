@@ -24,10 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${anonymous_pro.className} antialiased`}>
         <div className="flex flex-col">
-          {/* Header component can be added here if needed */}
           <Header />
           {children}
-          {/* Footer component can be added here if needed */}
           <Footer />
         </div>
       </body>
