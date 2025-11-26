@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link";
 
 const navigationLinks = [
@@ -15,7 +14,7 @@ const desktopNav = (
       <Link
         key={link.name}
         href={link.href}
-        className="hover:underline"
+        className="hover:transition-colors hover:text-amber-400 duration-100"
       >
         {link.name}
       </Link>
@@ -24,17 +23,18 @@ const desktopNav = (
 );
 
 const mobileNav = (
-  <nav className="md:hidden">
+  <nav className = "md:hidden flex flex-col space-y-2 mt-4">
     {navigationLinks.map((link) => (
-      <Link
+     <Link
         key={link.name}
         href={link.href}
+        className="text-center"
       >
         {link.name}
-      </Link>
+      </Link> 
     ))}
   </nav>
-);
+)
 
 export default function Header() {
   return (
